@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b989197e-2880-4723-9f18-bceddf8a0028" name="Changes" comment="Настройка парсинга и докера" />
+    <list default="true" id="b989197e-2880-4723-9f18-bceddf8a0028" name="Changes" comment="Настройка парсинга и докера">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,8 +93,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.sitepractice" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>

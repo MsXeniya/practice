@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 from fake_useragent import UserAgent
 import re
-from .models import Resume  # Уточните свой путь к моделям Django
+from .models import Resume
 
 def fetch_resume_data(query='', area=1, page_size=20, exp_period='all_time', logic='normal', order_by='relevance'):
     ua = UserAgent()
