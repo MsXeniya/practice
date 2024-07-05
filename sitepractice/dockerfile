@@ -1,0 +1,26 @@
+FROM python:3.9-buster
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    gcc \
+    locales
+
+#Установка локали
+RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+#Устанавливаем рабочую директорию в контейнере
+WORKDIR /app
+
+#файлы проекта в контейнер
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+#порт для приложения
+EXPOSE 8000
+
+#Команда для запуска приложения
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "sitepractice.wsgi:application"]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск резюме</title>
+</head>
+<body>
+    <h1>Поиск резюме</h1>
+    <form method="get" action="{% url 'parse_resumes' %}">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="skills">Навыки:</label>
+        <input type="text" id="skills" name="skills"><br><br>
+        <label for="job_title">Должность:</label>
+        <input type="text" id="job_title" name="job_title"><br><br>
+        <button type="submit">Найти</button>
+    </form>
+</body>
+</html>
