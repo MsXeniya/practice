@@ -12,3 +12,6 @@ class Resume(models.Model):
 
 
 
+
+
+
