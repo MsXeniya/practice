@@ -97,3 +97,8 @@ def fetch_resume_data(query='', area=1, page_size=20, exp_period='all_time', log
             break
 
     return all_vacancies
+
+
+
+
+
