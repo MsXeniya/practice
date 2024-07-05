@@ -17,3 +17,6 @@ class Resume(models.Model):
 
 
 
+
+
+
